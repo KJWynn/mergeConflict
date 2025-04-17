@@ -257,8 +257,9 @@ export function GameBoard({
                   sound("fourLines");
                 } else if (clearedLines[1].length > 0) {
                   sound("lineClear");
+                
                 }
-        return {
+                const newState = {
           ...prevState,
           lines: prevState.lines + clearedLines[1].length,
           level: newLevel,
@@ -273,9 +274,11 @@ export function GameBoard({
           dropInterval:
             newLevel > prevState.level ? calculateDropInterval(prevState.dropInterval) : prevState.dropInterval,
         };
+        saveGame(newState);
+        return newState;
       });
     },
-    [calcCollisionScore, calculateDropInterval, softDropBonus, sound]
+    [calcCollisionScore, calculateDropInterval, saveGame, softDropBonus, sound]
   );
 
   

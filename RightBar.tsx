@@ -12,7 +12,7 @@ export function RightBar({ nextTetromino, show }: { nextTetromino: Tetromino; sh
       if (show && nextTetromino.previewBlockPos.some(([x, y]) => x === i && y === j)) {
         row.push(<Cell key={j} colour={nextTetromino.colour} type="coloured" />);
       } else {
-        // comment 1
+        // nonexistent user
         row.push(<Cell key={j} colour="none" />); // game has not started, don't show next tetromino
       }
     }

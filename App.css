@@ -1,0 +1,21 @@
+import "./App.css";
+import { GameBoard } from "./components/GameBoard";
+
+function App() {
+  return (
+    <div className="app">
+      <h1>
+        <span className="green-letter white-shadow">T</span>
+        <span className="blue-letter white-shadow">E</span>
+        <span className="red-letter white-shadow">T</span>
+        <span className="orange-letter white-shadow">R</span>
+        <span className="aqua-letter white-shadow">I</span>
+        <span className="purple-letter white-shadow">S</span>
+      </h1>
+      <GameBoard />
+      <footer>©2025. All rights reserved.</footer>
+    </div>
+  );
+}
+
+export default App;

@@ -19,9 +19,12 @@ export function RightBar({ nextTetromino, show }: { nextTetromino: Tetromino; sh
   }
 
   return (
-    <div className="right-bar">
-      <div className="next-tetromino">Next</div>
-      <div className="next-tetromino-matrix">{matrix}</div>
-    </div>
+<div className="right-bar">
+       <div className="next-tetromino-box">
+         <div className="next-tetromino">Next</div>
+         <div className="next-tetromino-matrix">{matrix}</div>
+       </div>
+       <div className="save-status">{saveStatus}</div>
+     </div>
   );
 }

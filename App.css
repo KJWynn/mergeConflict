@@ -76,15 +76,14 @@
   }
   
   .right-bar {
-    background-color: #161616;
     display: flex;
-    height: 150px;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    border: 2px solid #ffffff;
-    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
-    border: 2px solid #ffffff;
-    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  .save-status {
+    color: #ffffff;
+    font-weight: 500;
   }
   
   .info {

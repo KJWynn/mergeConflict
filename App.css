@@ -1,0 +1,233 @@
+#root {
+    margin: 0 auto;
+  }
+  .start-game-btn {
+    background-color: #000000; 
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.75rem;
+    width: 100px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .start-game-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Press Start 2P', monospace;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('../arcade_bg.png') center/cover no-repeat;
+    filter: brightness(0.7); 
+    z-index: -1;
+  }
+  
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-content {
+    display: grid;  
+    grid-template-columns: 1fr 216px 1fr;
+    gap: 50px;
+  }
+  
+  .left-bar {
+    color: #ffffff;
+    background-color: #161616;
+    font-weight: 500;
+    height: 150px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  
+  .next-tetromino {
+    color: #ffffff;
+    background-color: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .next-tetromino-matrix {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .right-bar {
+    background-color: #161616;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  
+  .info {
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  
+  .matrix {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    width: 216px;
+    width: 216px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  
+  .square {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .coloured {
+    border: 1px solid #c0c0c0;
+  }
+  .white {
+    color: #ffffff
+  }
+  
+  .black {
+    background-color: #161616;
+  }
+  
+  .aqua {
+    background-color: #00FFFF;
+  }
+  
+  .red {
+    background-color: #FF0000;
+  }
+  
+  .blue {
+    background-color: #0000FF;
+  }
+  
+  .orange {
+    background-color: #FFA500;
+  }
+  
+  .green {
+    background-color: #008000;
+  }
+  
+  .purple {
+    background-color: #800080;
+  }
+  
+  .yellow {
+    background-color: #FFFF00;
+  }
+  
+  .faded{
+    opacity: 0.5;
+  }
+  
+  
+  .green-letter{
+    color: #008000;
+    text-shadow: 0 0 10px #008000, 0 0 20px #008000;
+  
+  }
+  
+  .blue-letter{
+    color: #0000FF;
+    text-shadow: 0 0 10px #0000FF, 0 0 20px #0000FF;
+  
+  }
+  
+  .red-letter{
+    color: #FF0000;
+    text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000;
+  
+  }
+  
+  .orange-letter{
+    color: #FFA500;
+    text-shadow: 0 0 10px #FFA500, 0 0 20px #FFA500;
+  
+  }
+  
+  .aqua-letter{
+    color: #00FFFF;
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+  
+  }
+  
+  .purple-letter{
+    color: #800080;
+    text-shadow: 0 0 10px #800080, 0 0 20px #800080;
+  
+  }
+  
+  .white-shadow{
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+  }
+  
+  footer {
+    font-size: 0.5rem;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /*Semi-transparent black*/
+    background: rgba(0, 0, 0, 0.7); /*Semi-transparent black*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background: #000000;
+    display: flex;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: space-around;
+    border: 2px solid #ffffff; 
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-text {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
